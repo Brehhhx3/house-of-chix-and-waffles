@@ -30,6 +30,12 @@ export const DEFAULT_RULES = {
   reviewIncentiveAllowed: false, // Explicitly forbidden per PDF guardrails!
 }
 
+function normalizeAssetPath(path) {
+  if (typeof path !== 'string') return path
+  if (path.startsWith('/assets/')) return '.' + path
+  return path
+}
+
 export function loadInitialState() {
   function getStored(key, fallback) {
     try {
@@ -42,9 +48,25 @@ export function loadInitialState() {
 
   const initialConnected = Object.fromEntries(PLATFORMS.map((p) => [p.key, true]))
 
+  const rawPosts = getStored(STORAGE_KEYS.POSTS, SEED_POSTS)
+  const posts = Array.isArray(rawPosts)
+    ? rawPosts.map((p) => ({
+        ...p,
+        image: normalizeAssetPath(p.image),
+      }))
+    : SEED_POSTS
+
+  const rawMedia = getStored(STORAGE_KEYS.MEDIA, SEED_MEDIA)
+  const media = Array.isArray(rawMedia)
+    ? rawMedia.map((m) => ({
+        ...m,
+        image: normalizeAssetPath(m.image),
+      }))
+    : SEED_MEDIA
+
   return {
-    posts: getStored(STORAGE_KEYS.POSTS, SEED_POSTS),
-    media: getStored(STORAGE_KEYS.MEDIA, SEED_MEDIA),
+    posts,
+    media,
     members: getStored(STORAGE_KEYS.MEMBERS, SEED_MEMBERS),
     team: getStored(STORAGE_KEYS.TEAM, SEED_TEAM),
     activity: getStored(STORAGE_KEYS.ACTIVITY, SEED_ACTIVITY),

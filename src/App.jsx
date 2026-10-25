@@ -330,7 +330,7 @@ export function App() {
         time: 'Immediate',
         platforms: ['instagram', 'facebook'],
         status: 'Ready to publish',
-        image: '/assets/food-platter.png',
+        image: './assets/food-platter.png',
         owner: 'Jasmine Carter',
         caption: 'GOLDEN WAFFLE DAY IS LIVE! 🌟 Earn 2x stamps on every qualifying entree today only. Hit your 6-stamp reward twice as fast! Ask Marcus at the register.',
         platformCaptions: {

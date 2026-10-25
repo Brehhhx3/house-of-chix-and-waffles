@@ -23,7 +23,7 @@ export function PostModal({
   const [date, setDate] = useState(initial?.date || 'Today')
   const [time, setTime] = useState(initial?.time || '10:00 AM')
   const [status, setStatus] = useState(initial?.status || 'Needs review')
-  const [image, setImage] = useState(initial?.image || '/assets/food-platter.png')
+  const [image, setImage] = useState(initial?.image || './assets/food-platter.png')
   const [owner, setOwner] = useState(initial?.owner || 'Jasmine Carter')
 
   // Platform specific captions
