@@ -238,7 +238,7 @@ export function HouseRewardsView({
               {/* Digital Punch Card Graphic */}
               <div className="punch-card-graphic">
                 <div className="punch-card-brand">
-                  <span>HOUSE OF CHIX & WAFFLES</span>
+                  <span>HOUSE OF CHICKEN & WAFFLES</span>
                   <strong>HOUSE PASS</strong>
                 </div>
 

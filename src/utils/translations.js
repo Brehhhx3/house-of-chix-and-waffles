@@ -1,6 +1,6 @@
 export const TRANSLATIONS = {
   en: {
-    dashboardTitle: 'House of Chix & Waffles Social Hub',
+    dashboardTitle: 'House of Chicken & Waffles Social Hub',
     tagline: 'Great food builds stronger communities.',
     goodMorning: 'Good morning, House crew',
     goodMorningSub: 'Your content is moving, your approvals are clear, and today’s posts are ready to go.',
@@ -45,7 +45,7 @@ export const TRANSLATIONS = {
     previewSocialMockup: 'Live Platform Preview',
   },
   es: {
-    dashboardTitle: 'House of Chix & Waffles Centro Social',
+    dashboardTitle: 'House of Chicken & Waffles Centro Social',
     tagline: 'La buena comida une y fortalece a nuestra comunidad.',
     goodMorning: 'Buenos días, equipo de la Casa',
     goodMorningSub: 'El contenido está al día, las aprobaciones listas y las publicaciones de hoy preparadas.',

@@ -178,7 +178,7 @@ export function AnalyticsView({ t }) {
           </span>
           <strong>{current.calls}</strong>
           <em>↑ {current.callsChange}</em>
-          <p className="stat-subtext">Direct calls to (401) 555-CHIX from Google/Social.</p>
+          <p className="stat-subtext">Direct calls to (401) 555-CHICKEN from Google/Social.</p>
         </div>
       </div>
 

@@ -46,7 +46,7 @@ export function Header({
       <div className="topbar-workspace">
         <span className="workspace-thumb">▥</span>
         <div>
-          <b>House of Chix & Waffles</b>
+          <b>House of Chicken & Waffles</b>
           <small>Downtown Providence, RI</small>
         </div>
       </div>

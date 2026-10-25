@@ -58,7 +58,7 @@ export function SocialPreview({
               <div className="ig-header">
                 <span className="ig-avatar">🧇</span>
                 <div>
-                  <strong>houseofchixandwaffles</strong>
+                  <strong>houseofchickenandwaffles</strong>
                   <small>Providence, Rhode Island</small>
                 </div>
                 <Icon name="dots" size={16} className="ig-more" />
@@ -70,7 +70,7 @@ export function SocialPreview({
                 </button>
                 <div className="reel-sound-tag">
                   <Icon name="spark" size={12} />
-                  <span>Original Audio · House of Chix Beats</span>
+                  <span>Original Audio · House of Chicken Beats</span>
                 </div>
               </div>
               <div className="ig-footer">
@@ -85,7 +85,7 @@ export function SocialPreview({
                   <strong>624 likes</strong>
                 </div>
                 <div className="ig-caption">
-                  <strong>houseofchixandwaffles</strong> <span>{caption}</span>
+                  <strong>houseofchickenandwaffles</strong> <span>{caption}</span>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ export function SocialPreview({
               <div className="fb-header">
                 <span className="fb-avatar">🧇</span>
                 <div>
-                  <strong>House of Chix & Waffles <span className="verified-check">✓</span></strong>
+                  <strong>House of Chicken & Waffles <span className="verified-check">✓</span></strong>
                   <small>Sponsored · Providence, RI · <Icon name="globe" size={10} /></small>
                 </div>
                 <Icon name="dots" size={16} />
@@ -129,11 +129,11 @@ export function SocialPreview({
                   <div className="tt-disc">🧇</div>
                 </div>
                 <div className="tt-bottom-overlay">
-                  <strong>@houseofchixandwaffles</strong>
+                  <strong>@houseofchickenandwaffles</strong>
                   <p>{caption}</p>
                   <div className="tt-music-row">
                     <Icon name="spark" size={12} />
-                    <marquee scrollamount="3">Original Kitchen ASMR Crunch · House of Chix</marquee>
+                    <marquee scrollamount="3">Original Kitchen ASMR Crunch · House of Chicken</marquee>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export function SocialPreview({
               <div className="gbp-header">
                 <span className="gbp-g">G</span>
                 <div>
-                  <strong>House of Chix & Waffles</strong>
+                  <strong>House of Chicken & Waffles</strong>
                   <small>Update from Business · Today</small>
                 </div>
               </div>

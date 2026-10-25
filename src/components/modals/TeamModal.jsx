@@ -101,7 +101,7 @@ export function TeamModal({ onClose, onSave }) {
               setEmail(e.target.value)
               setError('')
             }}
-            placeholder="name@houseofchix.com"
+            placeholder="name@houseofchicken.com"
           />
         </label>
 

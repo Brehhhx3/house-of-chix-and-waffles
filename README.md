@@ -1,6 +1,6 @@
-# House of Chix & Waffles | Social Hub & Operational Shell
+# House of Chicken & Waffles | Social Hub & Operational Shell
 
-Modern, interactive, and automated React + Vite dashboard shell engineered specifically for **House of Chix & Waffles** (Providence, RI).
+Modern, interactive, and automated React + Vite dashboard shell engineered specifically for **House of Chicken & Waffles** (Providence, RI).
 
 Implements the complete **90-Day Social Media Game Plan** and **House Rewards** loyalty strategy in a unified, error-free workspace.
 
@@ -13,7 +13,7 @@ Implements the complete **90-Day Social Media Game Plan** and **House Rewards** 
   - **Facebook**: Community & conversation, storytelling, question hook to invite comments, local Providence tags, and direct CTA.
   - **Instagram**: Polished beauty shot aesthetic, sensory descriptions, clean spacing, and 10+ targeted Providence foodie hashtags (`#ProvidenceEats #PVDfoodie`).
   - **TikTok**: High-energy first 3-second hook (*"You didn't know Providence had THIS"*), trending kitchen audio vibes, and fast-cut pacing tips.
-  - **Google Business Profile**: Local search optimization, operating hours, direct phone call `(401) 555-CHIX`, and "Order Online" conversion buttons.
+  - **Google Business Profile**: Local search optimization, operating hours, direct phone call `(401) 555-CHICKEN`, and "Order Online" conversion buttons.
 - Pre-loaded with signature concept starters (*Friday Boss Box, Morning Batter Sizzle, Golden Waffle Day, Chef Darnell's Secret Order*).
 
 ### 2. 📱 High-Fidelity Social Mockup Previews
@@ -93,7 +93,7 @@ src/
     ├── Sidebar.jsx             # Dark culinary sidebar with live badge counts
     ├── common/
     │   ├── Icon.jsx            # Lightweight SVG icon collection
-    │   ├── BrandMark.jsx       # House of Chix & Waffles official crest
+    │   ├── BrandMark.jsx       # House of Chicken & Waffles official crest
     │   ├── PlatformBadge.jsx   # Social network icons
     │   ├── StatusBadge.jsx     # Status indicators
     │   └── Toast.jsx           # Floating animated notification alerts

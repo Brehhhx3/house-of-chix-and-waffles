@@ -389,7 +389,7 @@ export function ToastView({
               <Icon name="clock" size={16} />
               <div>
                 <strong>Restaurant GUID Provisioning</strong>
-                <p>Requires Toast Partner Portal access to generate production GUID for <code>House of Chix & Waffles</code>.</p>
+                <p>Requires Toast Partner Portal access to generate production GUID for <code>House of Chicken & Waffles</code>.</p>
               </div>
             </div>
 

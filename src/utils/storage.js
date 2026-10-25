@@ -36,6 +36,16 @@ function normalizeAssetPath(path) {
   return path
 }
 
+function normalizeChicken(text) {
+  if (typeof text !== 'string') return text
+  return text
+    .replace(/House of Chix & Waffles/gi, 'House of Chicken & Waffles')
+    .replace(/House of Chix/gi, 'House of Chicken')
+    .replace(/Chix & Waffles/gi, 'Chicken & Waffles')
+    .replace(/@houseofchixandwaffles/gi, '@houseofchickenandwaffles')
+    .replace(/houseofchix\.com/gi, 'houseofchicken.com')
+}
+
 export function loadInitialState() {
   function getStored(key, fallback) {
     try {
@@ -52,7 +62,14 @@ export function loadInitialState() {
   const posts = Array.isArray(rawPosts)
     ? rawPosts.map((p) => ({
         ...p,
+        title: normalizeChicken(p.title),
+        caption: normalizeChicken(p.caption),
         image: normalizeAssetPath(p.image),
+        platformCaptions: p.platformCaptions
+          ? Object.fromEntries(
+              Object.entries(p.platformCaptions).map(([k, v]) => [k, normalizeChicken(v)])
+            )
+          : undefined,
       }))
     : SEED_POSTS
 
@@ -60,15 +77,24 @@ export function loadInitialState() {
   const media = Array.isArray(rawMedia)
     ? rawMedia.map((m) => ({
         ...m,
+        name: normalizeChicken(m.name),
         image: normalizeAssetPath(m.image),
       }))
     : SEED_MEDIA
+
+  const rawTeam = getStored(STORAGE_KEYS.TEAM, SEED_TEAM)
+  const team = Array.isArray(rawTeam)
+    ? rawTeam.map((t) => ({
+        ...t,
+        email: normalizeChicken(t.email),
+      }))
+    : SEED_TEAM
 
   return {
     posts,
     media,
     members: getStored(STORAGE_KEYS.MEMBERS, SEED_MEMBERS),
-    team: getStored(STORAGE_KEYS.TEAM, SEED_TEAM),
+    team,
     activity: getStored(STORAGE_KEYS.ACTIVITY, SEED_ACTIVITY),
     toastLogs: getStored(STORAGE_KEYS.TOAST_LOGS, SEED_TOAST_LOGS),
     connected: getStored(STORAGE_KEYS.CONNECTED, initialConnected),

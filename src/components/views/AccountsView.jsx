@@ -96,7 +96,7 @@ export function AccountsView({
             <div className="oauth-header">
               <PlatformIcon platform={connectingModal.key} size={44} />
               <h3>Connect to {connectingModal.name}</h3>
-              <p>Authorize House of Chix & Waffles Social Hub to manage content</p>
+              <p>Authorize House of Chicken & Waffles Social Hub to manage content</p>
             </div>
 
             <div className="oauth-permissions-box">

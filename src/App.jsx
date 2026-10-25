@@ -334,10 +334,10 @@ export function App() {
         owner: 'Jasmine Carter',
         caption: 'GOLDEN WAFFLE DAY IS LIVE! 🌟 Earn 2x stamps on every qualifying entree today only. Hit your 6-stamp reward twice as fast! Ask Marcus at the register.',
         platformCaptions: {
-          facebook: '🌟 DOUBLE STAMP ALERT: Today is Golden Waffle Day at House of Chix & Waffles! Earn 2 stamps per entree instead of 1.',
+          facebook: '🌟 DOUBLE STAMP ALERT: Today is Golden Waffle Day at House of Chicken & Waffles! Earn 2 stamps per entree instead of 1.',
           instagram: 'DOUBLE STAMPS ACTIVE TODAY! 🧇✨ Visit us in Providence and unlock your free waffle reward twice as fast. Link in bio!',
           tiktok: 'Golden Waffle Day is here! Double stamps all day in Providence RI 🏃💨',
-          google: 'Special Event: Double loyalty stamps on all dine-in and takeout orders today at House of Chix & Waffles.',
+          google: 'Special Event: Double loyalty stamps on all dine-in and takeout orders today at House of Chicken & Waffles.',
         },
       }
 
